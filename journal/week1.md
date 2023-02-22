@@ -96,6 +96,9 @@ networks:
 
 ![Proof of running multiple container](assets/multiple-container2.PNG)
 
+![Proof of running multiple container](assets/multiple-container3.PNG)
+
+
 
 
 
