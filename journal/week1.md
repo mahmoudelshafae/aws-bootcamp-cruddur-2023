@@ -34,5 +34,13 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
 ![Proof of containrize backend](assets/Add-Dockerfile.PNG)
 
+### Build Container
+
+```sh
+docker build -t  backend-flask ./backend-flask
+```
+![Proof of container](assets/build-container2.PNG)
+
+
 
 
