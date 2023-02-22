@@ -94,6 +94,10 @@ networks:
 ```
 ![Proof of running multiple container](assets/multiple-container.PNG)
 
+![Proof of running multiple container](assets/multiple-container2.PNG)
+
+
+
 
 
 
