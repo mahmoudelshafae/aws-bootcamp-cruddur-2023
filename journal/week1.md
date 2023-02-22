@@ -41,6 +41,13 @@ docker build -t  backend-flask ./backend-flask
 ```
 ![Proof of container](assets/build-container2.PNG)
 
+### Run Container
+
+Run 
+```sh
+docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
+```
+
 
 
 
