@@ -121,6 +121,57 @@ services:
 
 ![Proof of dynamodb local](assets/dynamodb-local.PNG)
 
+### Postgres
+
+```yaml
+services:
+  db:
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - '5432:5432'
+    volumes: 
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local
+```
+To install the postgres client into Gitpod
+
+```sh
+  - name: postgres
+    init: |
+      curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
+      echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+      sudo apt update
+      sudo apt install -y postgresql-client-13 libpq-dev
+```
+
+![Proof of postgress client](assets/postgress-client.PNG)
+
+## Volumes
+
+directory volume mapping
+
+```yaml
+volumes: 
+- "./docker/dynamodb:/home/dynamodblocal/data"
+```
+
+named volume mapping
+
+```yaml
+volumes: 
+  - db:/var/lib/postgresql/data
+
+volumes:
+  db:
+    driver: local
+```
+
 
 
 
