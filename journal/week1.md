@@ -152,7 +152,7 @@ To install the postgres client into Gitpod
 
 ![Proof of postgress client](assets/postgress-client.PNG)
 
-![Proof of flask endpoint](assets/postgress-client2.PNG)
+![Proof of flask endpoint](assets/postgress-client22.PNG)
 
 
 
